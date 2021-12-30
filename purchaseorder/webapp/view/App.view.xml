@@ -1,0 +1,11 @@
+<mvc:View
+    controllerName="com.apple.scp.purchaseorder.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell" appWidthLimited="false" class="sapUiSizeCompact sapUiSizeCozy">
+		<App id="app">
+		</App>
+	</Shell>
+</mvc:View>

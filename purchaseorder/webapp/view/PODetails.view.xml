@@ -1,0 +1,167 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.apple.scp.purchaseorder.controller.PODetails"
+    xmlns:objectPage="sap.uxap"
+    xmlns="sap.m"
+    xmlns:F="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns:forms="sap.ui.layout.form" height="100%">
+
+    <Page showHeader="false">
+        <content>
+            <FlexBox id="idFB" alignItems="Center" justifyContent="Start" class="zprofileBanner">
+                <items>
+                    <F:Avatar id="pDBack" displaySize="XS" initials="PB" src="sap-icon://nav-back" press="navigateToPO" class="sapUiTinyMarginBeginEnd zIcon-cls"/>
+                    <Title text="{i18n>detailPageTitle} - {PurchaseOrderParamModel>/purchaseOrder}" class="zPageTitle sapUiTinyMarginBeginEnd"></Title>
+                </items>
+            </FlexBox>
+            <Panel>
+                <content>
+                    <forms:SimpleForm class="sapUxAPObjectPageSubSectionAlignContent zHeader-Cls" layout="ColumnLayout" columnsM="2" columnsL="3" columnsXL="3">
+                        <core:Title text="{i18n>shipAllItemsText}" />
+
+                        <Label text="{i18n>detailPagePOText}" />
+                        <Text text="{headerModel>/results/0/PO}" />
+
+                        <Label text="{i18n>detailPageTransDateText}" />
+                        <Text text="{path:'headerModel>/results/0/Created_On',formatter:'.formatter.formatDate'}" />
+                        <Label text="{i18n>detailPageStatusText}" />
+
+                        <ObjectStatus class="sapUiSmallMarginBottom" text="{headerModel>/results/0/Status}" icon="sap-icon://sys-enter-2" state="{path:'headerModel>/results/0/Status',formatter:'.formatter.statusColor'}" />
+
+                        <core:Title text="{i18n>shipToHeaderText}" />
+                        <Label text="{i18n>detailPageAddText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Name1}" />
+
+                        <Label text="{i18n>detailPageCityText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/City}" />
+
+                        <Label text="{i18n>detailPostalCodeText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Postal_Code}" />
+
+                        <Label text="{i18n>detailRegionText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Region}" />
+
+                        <Label text="{i18n>detailStreetHNoText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Street_House_NO}" />
+                        <Label text="{i18n>detailTelPhoneText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Telephone}" />
+                        <Label text="{i18n>detailFaxText}" />
+                        <Text text="{headerModel>/results/0/ShipTo/results/0/Fax}" />
+
+                        <core:Title text="{i18n>shipFromHeaderText}" />
+                        <Label text="{i18n>detailPageAddText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Name1}" />
+
+                        <Label text="{i18n>detailPageCityText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/City}" />
+
+                        <Label text="{i18n>detailPostalCodeText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Postal_Code}" />
+
+                        <Label text="{i18n>detailRegionText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Region}" />
+
+                        <Label text="{i18n>detailStreetHNoText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Street_House_NO}" />
+                        <Label text="{i18n>detailTelPhoneText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Telephone}" />
+                        <Label text="{i18n>detailFaxText}" />
+                        <Text text="{headerModel>/results/0/ShipFrom/results/0/Fax}" />
+
+                    </forms:SimpleForm>
+                </content>
+            </Panel>
+            <FlexBox justifyContent="SpaceBetween" class="sapUiMediumMarginBeginEnd sapUiTinyMarginBottom">
+                <Text text="{i18n>detailTableInfoText}" class="zTableHeader-Cls"></Text>
+                <Button id="idToggleSLTable" class="sapUiSmallMarginEnd zsearchButtonWithoutWidth" type="Emphasized" press="toggleScheduleTable" text="{i18n>buttonCollapseScheduleText}" iconFirst="false"></Button>
+            </FlexBox>
+            <Panel class='zMasterDataTableDetails'>
+                <content>
+                    <Table class="zMasterDataTable-table-details-cls" id="table" width="auto" items="{path: 'lineItemModel>/results',templateShareable:false}" noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true" updateFinished=".onUpdateFinished">
+                        <columns>
+                            <Column hAlign="Center" width="4rem">
+                                <Text text="{i18n>detailTableHeaderLineText}"/>
+                            </Column>
+                            <Column hAlign="Center">
+                                <Text text="{i18n>detailTableHeaderMaterialText}"/>
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderPlantText}" />
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderOrdQtyText}" />
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderOrdUnitText}"/>
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderQtyDelText}"/>
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderOQtyText}" />
+                            </Column>
+                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                <Text text="{i18n>detailTableHeaderStatusText}" />
+                            </Column>
+                            <Column hAlign="Center" width="3rem" minScreenWidth="Tablet" demandPopin="true">
+                            </Column>
+                            <Column minScreenWidth="3000px" demandPopin="true"></Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Text text="{lineItemModel>Line}"/>
+                                    <Text text="{lineItemModel>Material}"/>
+                                    <Text text="{lineItemModel>Plant}"/>
+                                    <Text text="{lineItemModel>Order_Quantity}"/>
+                                    <Text text="{lineItemModel>Order_Unit}"/>
+                                    <Text text="{lineItemModel>Quantity_Delivered}"/>
+                                    <Text text="{lineItemModel>Open_Quantity}"/>
+                                    <ObjectStatus class="sapUiSmallMarginBottom" text="{lineItemModel>Status}" state="{path:'lineItemModel>Status',formatter:'.formatter.statusColor'}" />
+                                    <core:Icon id="idRowShift" src="{lineItemModel>icon}" press="onRowShiftAction"></core:Icon>
+                                    <Table items="{
+                            path: 'lineItemModel>LineItems/results',templateShareable:false
+                        }" noDataText="{worklistView>/tableNoDataText}" busyIndicatorDelay="{worklistView>/tableBusyDelay}" growing="true" growingScrollToLoad="true" updateFinished=".onUpdateFinished" visible="{=${lineItemModel>icon} === 'sap-icon://navigation-right-arrow' ? false:true }" class="zLineItemsTable-cls sapUiSmallMarginBottom">
+                                        <headerToolbar>
+                                            <OverflowToolbar>
+                                                <content>
+                                                    <Title text="{i18n>detailPageScheduleTableTitle}" level="H2"/>
+                                                </content>
+                                            </OverflowToolbar>
+                                        </headerToolbar>
+                                        <columns>
+                                            <Column hAlign="Center">
+                                                <Text text="{i18n>detailSchTableHeaderLineText}"/>
+                                            </Column>
+                                            <Column hAlign="Center">
+                                                <Text text="{i18n>detailSchTableHeaderDelDateText}"/>
+                                            </Column>
+                                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                                <Text text="{i18n>detailSchTableHeaderLDateText}"/>
+                                            </Column>
+                                            <Column hAlign="Center" minScreenWidth="Tablet" demandPopin="true">
+                                                <Text text="{i18n>detailSchTableHeaderQUnitText}"/>
+                                            </Column>
+                                        </columns>
+
+                                        <items>
+                                            <ColumnListItem>
+                                                <cells>
+                                                    <Text text="{lineItemModel>ScheduleLine}"/>
+                                                    <Text text="{path:'lineItemModel>Delivery_Date',formatter:'.formatter.formatDate'}"/>
+                                                    <Text text="{path:'lineItemModel>Order_date',formatter:'.formatter.formatDate'}"/>
+                                                    <Text text="{lineItemModel>Quantity}"/>
+                                                </cells>
+                                            </ColumnListItem>
+                                        </items>
+                                    </Table>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </Panel>
+        </content>
+    </Page>
+
+</mvc:View>

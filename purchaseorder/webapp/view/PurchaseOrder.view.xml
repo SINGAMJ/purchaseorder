@@ -1,0 +1,114 @@
+<mvc:View controllerName="com.apple.scp.purchaseorder.controller.PurchaseOrder"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:F="sap.f"
+    xmlns:core="sap.ui.core"
+    xmlns:semantic="sap.f.semantic"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+    xmlns:smartTable="sap.ui.comp.smarttable"
+    xmlns:l="sap.ui.layout">
+
+    <Page showHeader="false">
+        <content>
+            <FlexBox id="idFb" alignItems="Center" justifyContent="Start" class="zprofileBanner">
+                <items>
+                    <Title text="{i18n>appTitle}" class="zPageTitle sapUiMediumMarginBeginEnd"></Title>
+                </items>
+            </FlexBox>
+            <Panel expandable="true" expanded="true" headerText="{i18n>filterPanelText}" width="auto" class="zFilterPanel sapUiMediumMarginBeginEnd sapUiMediumMarginTop">
+                <content>
+                    <l:VerticalLayout>
+                        <smartFilterBar:SmartFilterBar id="smartFilterBar" entitySet="POHeaders" showGoOnFB="false" showRestoreButton="false" showFilterConfiguration="true" useToolbar="false" initialise="filterIntialise">
+                            <smartFilterBar:controlConfiguration>
+                                <smartFilterBar:ControlConfiguration key="Created_On" visibleInAdvancedArea="true" controlType="date" filterType="interval">
+                                </smartFilterBar:ControlConfiguration>
+                            </smartFilterBar:controlConfiguration>
+                            <smartFilterBar:layoutData>
+                                <FlexItemData shrinkFactor="0"/>
+                            </smartFilterBar:layoutData>
+                        </smartFilterBar:SmartFilterBar>
+                    </l:VerticalLayout>
+                    <FlexBox justifyContent="End" class="sapUiSmallMarginEnd">
+                        <items>
+                            <Button id="idClear" text="{i18n>BtnClear}" press="onClear" class="zclearButton"/>
+                            <Button id="idSearch" text="{i18n>BtnSearch}" press="onSearchPo" class="zsearchButton" type="Emphasized"/>
+                        </items>
+                    </FlexBox>
+                </content>
+            </Panel>
+            <Panel class='zMasterDataTable'>
+                <content>
+
+                    <smartTable:SmartTable id="poSmartTable" entitySet="POHeaders" smartFilterId="smartFilterBar" tableType="Table" useExportToExcel="true" beforeExport="onBeforeExport" useVariantManagement="false" useTablePersonalisation="true" header="{i18n>tableHeaderPoCount}" showRowCount="true" demandPopin="true" beforeRebindTable="beforeTableRebind" class="zMasterDataTable-table-cls" ignoreFromPersonalisation="MPN">
+                        <Table id="innerTable" sticky="ColumnHeaders,HeaderToolbar" growing="true" growingThreshold="20" growingScrollToLoad="true">
+                            <columns>
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "PO","leadingProperty": "PO"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderPo}"/>
+                                </Column>
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "Company_Code","leadingProperty": "Company_Code"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderCCode}"/>
+                                </Column>
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "Created_On","leadingProperty": "Created_On"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderCreatedOn}"/>
+                                </Column>
+
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "Created_By","leadingProperty": "Created_By"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderCreatedBy}"/>
+                                </Column>
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "Doc_Date","leadingProperty": "Doc_Date"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderDocDate}"/>
+                                </Column>
+                                <Column>
+                                    <customData>
+                                        <core:CustomData key="p13nData" value='\{"columnKey": "Status","leadingProperty": "Status"}' />
+                                    </customData>
+                                    <Text text="{i18n>tableHeaderStatus}"/>
+                                </Column>
+                            </columns>
+                            <items>
+                                <ColumnListItem>
+                                    <cells>
+                                        <Link text="{PO}" press="navigateToPODetails" />
+                                    </cells>
+                                    <cells>
+                                        <Text text="{Company_Code}" />
+                                    </cells>
+                                    <cells>
+                                        <Text text="{path:'Created_On',formatter:'.formatter.formatDate'}" />
+                                    </cells>
+                                    <cells>
+                                        <Text text="{Created_By}" />
+                                    </cells>
+                                    <cells>
+                                        <Text text="{path:'Doc_Date',formatter:'.formatter.formatDate'}" />
+                                    </cells>
+                                    <cells>
+                                        <ObjectStatus text="{Status}" state="{path:'Status',formatter:'.formatter.statusColor'}" />
+                                    </cells>
+                                </ColumnListItem>
+                            </items>
+                        </Table>
+                    </smartTable:SmartTable>
+                </content>
+            </Panel>
+
+        </content>
+
+    </Page>
+</mvc:View>

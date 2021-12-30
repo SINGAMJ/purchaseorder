@@ -1,0 +1,942 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248265')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248265')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248265"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248278')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248278')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248278"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248312')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248312')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248312"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248313')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248313')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248313"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248326')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248326')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248326"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248327')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248327')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248327"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248361')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248361')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248361"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248362')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248362')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248362"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248378')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248378')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248378"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248382')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248382')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248382"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248387')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248387')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248387"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248393')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248393')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248393"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248395')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248395')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248395"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248417')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248417')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248417"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248419')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248419')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248419"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248425')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248425')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248425"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248474')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248474')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248474"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248475')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248475')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248475"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248485')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248485')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248485"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248493')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248493')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248493"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248652')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248652')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248652"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248713')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248713')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248713"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248714')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248714')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248714"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248801')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618248801')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618248801"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249145')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249145')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249145"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249151')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249151')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249151"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249554')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249554')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249554"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249601')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249601')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249601"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249602')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249602')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249602"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249951')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249951')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249951"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249952')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249952')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249952"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249952')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618249952')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618249952"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250000')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250000"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250053')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250053')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250053"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250502')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250502')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250502"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250701')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250701')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250701"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250853')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250853')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250853"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250854')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618250854')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618250854"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251001')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251001')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251001"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251201')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251201')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251201"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251202')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251202')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251202"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251506')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251506')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251506"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251601')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251601')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251601"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251852')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618251852')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618251852"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252301')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252301')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252301"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252302')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252302')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252302"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252303')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252303')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252303"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252307')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252307')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252307"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252307')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252307')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252307"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252309')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252309')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252309"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252309')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252309')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252309"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252310')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252310')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252310"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252334')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252334')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252334"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252337')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252337')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252337"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252343')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252343')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252343"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252346')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252346')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252346"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252802')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252802')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252802"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252851')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618252851')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618252851"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253052')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253052')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253052"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253102')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253102')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253102"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253151')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253151')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253151"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253152')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253152')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253152"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253251')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253251')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253251"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253305')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253305')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253305"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253452')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253452')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253452"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253457')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253457')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253457"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253458')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253458')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253458"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253501')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253501')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253501"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253601')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253601')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253601"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253702')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253702')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253702"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253704')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253704')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253704"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253904')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253904')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253904"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253904')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618253904')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618253904"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254269')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254269')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618254269"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254298')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254298')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618254298"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254333')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254333')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618254333"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254951')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618254951')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618254951"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255045')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255045')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255045"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255046')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255046')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255046"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255047')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255047')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255047"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255048')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255048')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255048"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255049')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255049')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255049"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255050')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255050')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255050"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255202')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255202')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255202"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255403')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255403')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255403"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255407')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255407')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255407"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255408')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255408')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255408"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255409')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255409')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255409"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255453')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255453')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255453"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255504')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255504')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255504"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255519')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255519')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255519"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255521')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255521')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255521"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255527')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255527')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255527"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255530')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255530')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255530"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255531')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255531')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255531"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255532')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255532')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255532"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255754')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255754')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255754"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255904')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618255904')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618255904"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256103')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256103')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618256103"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256201')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256201')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618256201"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256415')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256415')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618256415"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256682')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618256682')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618256682"
+            },
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618257095')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/RemoveDuplicatePurchaseOrder('0618257095')",
+                    "type": "API.RemoveDuplicatePurchaseOrder"
+                },
+                "PO": "0618257095"
+            }
+        ]
+    }
+}

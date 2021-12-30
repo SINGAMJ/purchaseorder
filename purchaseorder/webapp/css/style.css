@@ -1,0 +1,388 @@
+.sapMPageBgStandard {
+    background-color:white !important;
+}
+.sapUiBody {
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    color: #333;
+    background: #ffffff !important;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: 'liga', 'kern';
+    text-shadow:none;
+}
+.sapUiGlobalBackgroundColor, .sapMShellGlobalInnerBackground{
+    background-color: #FFFFFF;
+}
+.sapMText{
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+     color: #515458 !important;
+     opacity: 1 !important;
+     font-size:14px !important;
+}
+.sapMLnk {
+     font-family: "SF Pro Text", -apple-system, sans-serif !important;
+     opacity: 1 !important;
+     color:#007AFF !important;
+     font-size:14px !important;
+}
+.sapUiFormTitleH5 {
+    border-bottom: 1px solid gray !important;
+}
+.sapMInputBaseContentWrapper {
+    border-radius: 5px;
+    
+}
+.sapMTitle{
+    color:#FFFFFF;
+    text-align: left;
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+}
+.sapMPanelHdr{
+    margin:none !important;
+}
+.sapMBtnEmphasized {
+    font-weight: normal !important;
+}
+.sapMPanelExpandable .sapMPanelWrappingDiv:focus{
+    outline: none !important;
+}
+.sapMBreadcrumbs .sapMBreadcrumbsCurrentLocation:focus{
+    outline: none !important;
+}
+
+.sapMLIB.sapMLIBSelected{
+    border-bottom: none !important;
+}
+
+.sapMFocus .sapMInputBaseContentWrapper{
+    outline: none !important
+}
+html.sap-desktop .sapMLnk:focus:not(.sapMLnkDsbl){
+    outline: none !important;
+    text-decoration:none !important;
+    list-style:none !important;
+}
+.sapMLnk:hover{
+    list-style:none !important;
+    text-decoration:none !important;
+}
+html.sap-desktop .sapUiCompSmartLink.sapMLnk:hover:not(.sapMLnkDsbl) span,html.sap-desktop .sapUiCompSmartLink.sapMLnk:focus:not(.sapMLnkDsbl) span {
+    text-decoration: none !important;
+}
+button{
+    outline: none !important;
+}
+.sapMPanelContent:not(.sapMPanelBGTransparent){
+    border:none;
+}
+.sapMTBStandard{
+    border: none !important;
+}
+.sapMLIBFocusable:focus{
+    outline: none !important;
+}
+.sapUiIcon:focus{
+    outline: none !important;
+}
+.sapMBtn:hover>.sapMBtnHoverable{
+    border:none !important;
+    background-color: none !important;
+}
+html.sap-desktop .sapMBtn:focus>.sapMFocusable{
+    outline: none !important;
+}
+
+.sapMBtn:hover>.sapMBtnTransparent.sapMBtnHoverable:not(.sapMBtnActive):not(.sapMToggleBtnPressed){
+    background-color: transparent !important;
+}
+.sapMTableTBody:not(.sapMListTblHasPopin)>.sapMLIBSelected:last-child, .sapMTableTBody.sapMListTblHasPopin>.sapMLIBSelected+.sapMListTblSubRow:last-child{
+    box-shadow: none !important;
+}
+
+:not(.sapMBtnDisabled)>span.sapMBtnInner.sapMBtnIconFirst.sapMBtnTransparent.sapMBtnActive{
+    background-color: transparent !important;
+}
+
+.sapMPanel .sapMPanelHdr{
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+}
+
+.sapMListShowSeparatorsAll .sapMLIBShowSeparator:last-child>td:not(.sapMListTblDummyCell){
+    border-bottom: none !important;
+}
+
+.sapMITBContent{
+    border-bottom: none;
+}
+.sapMTableTBody:not(.sapMListTblHasPopin)>.sapMLIBSelected{
+    box-shadow: none !important;
+}
+.sapMListTblRow.sapMLIBActive{
+    background: white !important;
+    background-color: white !important;
+}
+.sapMBreadcrumbs .sapMBreadcrumbsCurrentLocation{
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+}
+
+.sapMBreadcrumbs .sapMLnk{
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+}
+.sapFAvatarFocusable:focus {
+    outline:none !important;
+}
+
+
+html.sap-desktop .sapMBtn:focus>.sapMBtnActive.sapMBtnEmphasized.sapMFocusable {
+    outline:none !important;
+    border:none !important;
+}
+html.sap-desktop .sapMBtn:focus>.sapMBtnEmphasized.sapMFocusable :not(.sapMBadgeIndicator):after {
+    border:none !important;
+}
+
+.sapMInputBaseInner::-webkit-input-placeholder {
+    font-size: .875rem;
+    font-style: normal;
+    padding: 0 .125rem
+}
+
+.sapMInputBaseInner::-moz-placeholder {
+    font-size: .875rem;
+    font-style: normal;
+    padding: 0 .125rem
+}
+.sapUxAPObjectPageWrapper{
+    background:white !important;
+}
+.sapUxAPObjectPageHeaderContent{
+    padding:0px !important;
+}
+.sapMBarPH {
+    display: block;
+}
+/*-----------------------------------------Custom Css--------------------------*/
+
+
+.zprofileBanner{
+    height: 89px !important;
+    color:#F8F8F8 !important;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+    background: #09588a; /* Old browsers */
+    background: -moz-linear-gradient(top, #09588a 0%, #073c68 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #09588a 0%,#073c68 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #09588a 0%,#073c68 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    
+}
+.zprofileBanner .sapMPanelContent:not(.sapMPanelBGTransparent){
+    border-bottom: none !important;
+}
+.zPageTitle{
+    font-size: 28px;
+}
+.zLabel-cls{
+    opacity: 1;
+    color:#FFFFFF !important;
+    font-size: 18px;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+}
+
+.zFilter .sapMInputBaseInner{
+    width:241px !important;
+}
+.zFilter{
+    height:75px !important;
+    vertical-align: middle;
+    background: #F4F4F4 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-bottom: 1px solid #D2D2D7 !important;
+}
+.zpanel .sapMPanel>.sapMPanelHdr, .sapMPanelWrappingDiv, .sapMPanelWrappingDivTb{
+    border-bottom: none !important;
+}
+.zFilterPanel .sapMPanelHdr{
+    margin-bottom: 1rem !important;
+}
+.zMasterDataTable .sapMPanelContent {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 0;
+}
+.zMasterDataTableDetails .sapMPanelContent {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0
+}
+.zMasterDataTable-table-cls tr{
+     height: 46px !important;
+ }
+.zMasterDataTable-table-details-cls thead{
+     height: 46px !important;
+ }
+
+.zMasterDataTableDetails1 .sapMPanelContent {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3E3E3;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 0
+}
+.zFilterPanel{
+    border: 1px solid #D2D2D7 !important;
+    border-radius: 10px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.zFilterPanel .sapUiCompFilterBar{
+    border:none !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.zFilterPanel .sapMPanelWrappingDiv{
+    margin-top: 1rem !important;
+}
+
+.zLineItemsTable-cls h2{
+    color: #000000 !important;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+ }
+.zLineItemsTable-cls table{
+    border:1px solid #E3E3E3;
+    border-radius:10px !important;
+}
+.zLineItemsTable-cls tr{
+    height:46px !important;
+}
+/*.zMasterDataTableDetails tr{
+    height:46px !important;
+}*/
+ .zclearButton .sapMBtnInner{
+    font-size: 12px;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+    border-color: #E8E8ED;
+    color: #000000 !important;
+    letter-spacing: 0px;
+    height: 24px;
+    margin-left: 15px;
+    padding: 0;
+    border-radius: 5px;
+    text-shadow: none !important;
+    align-items: center;
+    background: #E8E8ED 0% 0% no-repeat padding-box;
+    width: 94px;
+}
+
+.zclearButton .sapMBtnInner:hover{
+    border-color: #E8E8ED;
+    color: #000000 !important;
+}
+
+.zclearButton .sapMBtnDefault{
+    color: #000000 !important;
+}
+
+.zclearButton .sapMBtnInner.sapMBtnText.sapMBtnActive{
+    color: #000000 !important;
+}
+
+.zclearButton .sapMBtnInner.sapMBtnHoverable.sapMFocusable.sapMBtnText.sapMBtnDefault{
+    border:none;
+    outline: none !important;
+}
+
+.zclearButton .sapMBtnInner.sapMBtnActive{
+   background-color: #E8E8ED;
+}
+.zsearchButton .sapMBtnInner {
+    font-size: 12px;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    height: 24px;
+    margin-left: 15px;
+    padding: 0;
+    border-radius: 5px;
+    text-shadow: none !important;
+    align-items: center;
+    background: #007AFF 0% 0% no-repeat padding-box !important;
+    width: 94px;
+}
+
+.zsearchButton .sapMBtnInner:hover {
+    background-color: #4394E9 !important;
+}
+.zsearchButtonWithoutWidth .sapMBtnInner {
+    font-size: 12px;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    height: 24px;
+    margin-left: 15px;
+    padding: 0;
+    border-radius: 5px;
+    text-shadow: none !important;
+    align-items: center;
+    background: #007AFF 0% 0% no-repeat padding-box !important;
+}
+
+.zsearchButtonWithoutWidth .sapMBtnInner:hover {
+    background-color: #4394E9 !important;
+}
+.zIcon-cls.sapFAvatarCircle {
+    border:1px solid #FFFFFF;
+    font-family: "SF Pro Text", -apple-system, sans-serif;
+    background: #09588a; /* Old browsers */
+    background: -moz-linear-gradient(top, #09588a 0%, #073c68 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #09588a 0%,#073c68 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #09588a 0%,#073c68 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+
+.zHeader-Cls .sapUiFormTitleH5{
+    color: #383838;
+    opacity: 1;
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    letter-spacing: 0px;
+    border-bottom:1px solid #e0e0e0 !important;
+    
+}
+.zHeader-Cls .sapMLabel 
+{
+    text-align: right;
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    color: #515458;
+    font-weight:normal !important;
+    opacity: 1;
+}
+.zHeader-Cls .sapMText{
+    text-align: right;
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+    font-size: 14px !important;
+    letter-spacing: 0px;
+    color: #515458;
+    font-weight:normal !important;
+    opacity: 1;
+}
+.zTableHeader-Cls{
+    color: #383838;
+    opacity: 1;
+    font-family: "SF Pro Text", -apple-system, sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    letter-spacing: 0px;
+    
+}
+

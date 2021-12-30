@@ -1,0 +1,44 @@
+{
+    "d": {
+        "results": [
+            {
+                "__metadata": {
+                    "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/POItems(PO='0618248265',Line='00010',Material='KE435BR%2FA',Plant='LB10',Storage_Location='ORT',Material_Group='IPH00',Order_Quantity=1.000M,Order_Unit='EA',Stock_Type='',Item_Text='ORT%20IPHONE%205S%20SPACE%20GRAY%2032GB-BRA',Open_Quantity='1',Quantity_Delivered=0.000M,Status='OPEN',Vendor='000295ANP')",
+                    "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/POItems(PO='0618248265',Line='00010',Material='KE435BR%2FA',Plant='LB10',Storage_Location='ORT',Material_Group='IPH00',Order_Quantity=1.000M,Order_Unit='EA',Stock_Type='',Item_Text='ORT%20IPHONE%205S%20SPACE%20GRAY%2032GB-BRA',Open_Quantity='1',Quantity_Delivered=0.000M,Status='OPEN',Vendor='000295ANP')",
+                    "type": "API.POItems"
+                },
+                "PO": "0618248265",
+                "Line": "00010",
+                "Material": "KE435BR/A",
+                "Plant": "LB10",
+                "Storage_Location": "ORT",
+                "Material_Group": "IPH00",
+                "Order_Quantity": "1.000",
+                "Order_Unit": "EA",
+                "Stock_Type": "",
+                "Item_Text": "ORT IPHONE 5S SPACE GRAY 32GB-BRA",
+                "Open_Quantity": "1",
+                "Quantity_Delivered": "0.000",
+                "Status": "OPEN",
+                "Vendor": "000295ANP",
+                "LineItems": {
+                    "results": [
+                        {
+                            "__metadata": {
+                                "id": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/ScheduleLine('0618248265')",
+                                "uri": "https://olympusoem-uat-cp.corp.apple.com:10443/odata/v2/API/ScheduleLine('0618248265')",
+                                "type": "API.ScheduleLine"
+                            },
+                            "PO": "0618248265",
+                            "Line": "00010",
+                            "ScheduleLine": "0001",
+                            "Order_date": "20210107",
+                            "Quantity": "1.000",
+                            "Delivery_Date": "20210118"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

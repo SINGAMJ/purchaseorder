@@ -1,0 +1,384 @@
+<?xml version="1.0" ?>
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0"
+    xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"></edmx:Include>
+    </edmx:Reference>
+    <edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"></edmx:Include>
+    </edmx:Reference>
+    <edmx:Reference xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"></edmx:Include>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="1.0"
+        xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+        <Schema Namespace="API"
+            xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="RemoveDuplicatePurchaseOrder">
+                <Key>
+                    <PropertyRef Name="PO"></PropertyRef>
+                </Key>
+                <Property Name="PO" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+            </EntityType>
+            <EntityType Name="RemoveDuplicatePoStatus">
+                <Key>
+                    <PropertyRef Name="Status"></PropertyRef>
+                </Key>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="25"></Property>
+            </EntityType>
+            <EntityType Name="RemoveDuplicatePoSuplier">
+                <Key>
+                    <PropertyRef Name="Vendor"></PropertyRef>
+                </Key>
+                <Property Name="Vendor" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+            </EntityType>
+            <EntityType Name="RemoveDuplicatePoMaterial">
+                <Key>
+                    <PropertyRef Name="Material"></PropertyRef>
+                </Key>
+                <Property Name="Material" Type="Edm.String" Nullable="false" MaxLength="18"></Property>
+            </EntityType>
+            <EntityType Name="POHeaders">
+                <Key>
+                    <PropertyRef Name="PO"></PropertyRef>
+                </Key>
+                <Property Name="PO" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+                <Property Name="Company_Code" Type="Edm.String" MaxLength="4"></Property>
+                <Property Name="Created_On" Type="Edm.String" MaxLength="8"></Property>
+                <Property Name="Created_By" Type="Edm.String" MaxLength="12"></Property>
+                <Property Name="Vendor" Type="Edm.String" MaxLength="10"></Property>
+                <Property Name="Doc_Date" Type="Edm.String" MaxLength="8"></Property>
+                <Property Name="Status" Type="Edm.String" MaxLength="25"></Property>
+                <Property Name="Purchase_Organization" Type="Edm.String" MaxLength="4"></Property>
+                <Property Name="Document_Type" Type="Edm.String" MaxLength="4"></Property>
+                <Property Name="Plant" Type="Edm.String" MaxLength="4"></Property>
+                <Property Name="Material" Type="Edm.String" MaxLength="18"></Property>
+                <NavigationProperty Name="POItems" Relationship="API.POHeaders_POItems" FromRole="POHeaders" ToRole="POItems"></NavigationProperty>
+                <NavigationProperty Name="ShipFrom" Relationship="API.POHeaders_ShipFrom" FromRole="POHeaders" ToRole="Shipment"></NavigationProperty>
+                <NavigationProperty Name="ShipTo" Relationship="API.POHeaders_ShipTo" FromRole="POHeaders" ToRole="Shipment"></NavigationProperty>
+            </EntityType>
+            <EntityType Name="POItems">
+                <Key>
+                    <PropertyRef Name="PO"></PropertyRef>
+                    <PropertyRef Name="Line"></PropertyRef>
+                    <PropertyRef Name="Material"></PropertyRef>
+                    <PropertyRef Name="Plant"></PropertyRef>
+                    <PropertyRef Name="Storage_Location"></PropertyRef>
+                    <PropertyRef Name="Material_Group"></PropertyRef>
+                    <PropertyRef Name="Order_Quantity"></PropertyRef>
+                    <PropertyRef Name="Order_Unit"></PropertyRef>
+                    <PropertyRef Name="Stock_Type"></PropertyRef>
+                    <PropertyRef Name="Item_Text"></PropertyRef>
+                    <PropertyRef Name="Open_Quantity"></PropertyRef>
+                    <PropertyRef Name="Quantity_Delivered"></PropertyRef>
+                    <PropertyRef Name="Status"></PropertyRef>
+                    <PropertyRef Name="Vendor"></PropertyRef>
+                </Key>
+                <Property Name="PO" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+                <Property Name="Line" Type="Edm.String" Nullable="false" MaxLength="5"></Property>
+                <Property Name="Material" Type="Edm.String" Nullable="false" MaxLength="18"></Property>
+                <Property Name="Plant" Type="Edm.String" Nullable="false" MaxLength="4"></Property>
+                <Property Name="Storage_Location" Type="Edm.String" Nullable="false" MaxLength="4"></Property>
+                <Property Name="Material_Group" Type="Edm.String" Nullable="false" MaxLength="9"></Property>
+                <Property Name="Order_Quantity" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3"></Property>
+                <Property Name="Order_Unit" Type="Edm.String" Nullable="false" MaxLength="3"></Property>
+                <Property Name="Stock_Type" Type="Edm.String" Nullable="false" MaxLength="1"></Property>
+                <Property Name="Item_Text" Type="Edm.String" Nullable="false" MaxLength="40"></Property>
+                <Property Name="Open_Quantity" Type="Edm.String" Nullable="false" MaxLength="50"></Property>
+                <Property Name="Quantity_Delivered" Type="Edm.Decimal" Nullable="false" Precision="13" Scale="3"></Property>
+                <Property Name="Status" Type="Edm.String" Nullable="false" MaxLength="25"></Property>
+                <Property Name="Vendor" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+                <NavigationProperty Name="LineItems" Relationship="API.POItems_LineItems" FromRole="POItems" ToRole="ScheduleLine"></NavigationProperty>
+            </EntityType>
+            <EntityType Name="ScheduleLine">
+                <Key>
+                    <PropertyRef Name="PO"></PropertyRef>
+                </Key>
+                <Property Name="PO" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+                <Property Name="Line" Type="Edm.String" MaxLength="5"></Property>
+                <Property Name="ScheduleLine" Type="Edm.String" MaxLength="4"></Property>
+                <Property Name="Order_date" Type="Edm.String" MaxLength="8"></Property>
+                <Property Name="Quantity" Type="Edm.Decimal" Precision="13" Scale="3"></Property>
+                <Property Name="Delivery_Date" Type="Edm.String" MaxLength="8"></Property>
+            </EntityType>
+            <EntityType Name="Shipment">
+                <Key>
+                    <PropertyRef Name="Vendor"></PropertyRef>
+                </Key>
+                <Property Name="Vendor" Type="Edm.String" Nullable="false" MaxLength="10"></Property>
+                <Property Name="Name1" Type="Edm.String" MaxLength="35"></Property>
+                <Property Name="Name2" Type="Edm.String" MaxLength="35"></Property>
+                <Property Name="City" Type="Edm.String" MaxLength="35"></Property>
+                <Property Name="Postal_Code" Type="Edm.String" MaxLength="10"></Property>
+                <Property Name="Region" Type="Edm.String" MaxLength="3"></Property>
+                <Property Name="Sort_Field" Type="Edm.String" MaxLength="10"></Property>
+                <Property Name="Street_House_NO" Type="Edm.String" MaxLength="35"></Property>
+                <Property Name="Telephone" Type="Edm.String" MaxLength="16"></Property>
+                <Property Name="Fax" Type="Edm.String" MaxLength="31"></Property>
+            </EntityType>
+            <Association Name="POHeaders_POItems">
+                <End Type="API.POHeaders" Multiplicity="1" Role="POHeaders">
+                    <OnDelete Action="Cascade"></OnDelete>
+                </End>
+                <End Type="API.POItems" Multiplicity="*" Role="POItems"></End>
+            </Association>
+            <Association Name="POHeaders_ShipFrom">
+                <End Type="API.POHeaders" Multiplicity="*" Role="POHeaders"></End>
+                <End Type="API.Shipment" Multiplicity="*" Role="Shipment"></End>
+            </Association>
+            <Association Name="POHeaders_ShipTo">
+                <End Type="API.POHeaders" Multiplicity="*" Role="POHeaders"></End>
+                <End Type="API.Shipment" Multiplicity="*" Role="Shipment"></End>
+            </Association>
+            <Association Name="POItems_LineItems">
+                <End Type="API.POItems" Multiplicity="1" Role="POItems">
+                    <OnDelete Action="Cascade"></OnDelete>
+                </End>
+                <End Type="API.ScheduleLine" Multiplicity="*" Role="ScheduleLine"></End>
+            </Association>
+            <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="RemoveDuplicatePurchaseOrder" EntityType="API.RemoveDuplicatePurchaseOrder"></EntitySet>
+                <EntitySet Name="RemoveDuplicatePoStatus" EntityType="API.RemoveDuplicatePoStatus"></EntitySet>
+                <EntitySet Name="RemoveDuplicatePoSuplier" EntityType="API.RemoveDuplicatePoSuplier"></EntitySet>
+                <EntitySet Name="RemoveDuplicatePoMaterial" EntityType="API.RemoveDuplicatePoMaterial"></EntitySet>
+                <EntitySet Name="POHeaders" EntityType="API.POHeaders"></EntitySet>
+                <EntitySet Name="POItems" EntityType="API.POItems"></EntitySet>
+                <EntitySet Name="ScheduleLine" EntityType="API.ScheduleLine"></EntitySet>
+                <EntitySet Name="Shipment" EntityType="API.Shipment"></EntitySet>
+                <AssociationSet Name="POHeaders_POItems" Association="API.POHeaders_POItems">
+                    <End EntitySet="POHeaders" Role="POHeaders"></End>
+                    <End EntitySet="POItems" Role="POItems"></End>
+                </AssociationSet>
+                <AssociationSet Name="POHeaders_ShipFrom" Association="API.POHeaders_ShipFrom">
+                    <End EntitySet="POHeaders" Role="POHeaders"></End>
+                    <End EntitySet="Shipment" Role="Shipment"></End>
+                </AssociationSet>
+                <AssociationSet Name="POHeaders_ShipTo" Association="API.POHeaders_ShipTo">
+                    <End EntitySet="POHeaders" Role="POHeaders"></End>
+                    <End EntitySet="Shipment" Role="Shipment"></End>
+                </AssociationSet>
+                <AssociationSet Name="POItems_LineItems" Association="API.POItems_LineItems">
+                    <End EntitySet="POItems" Role="POItems"></End>
+                    <End EntitySet="ScheduleLine" Role="ScheduleLine"></End>
+                </AssociationSet>
+            </EntityContainer>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePurchaseOrder">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Description" String="Entities"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePurchaseOrder/PO">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="PO#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoStatus">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Description" String=" Views"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoStatus/Status">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Status"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoSuplier">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Description" String=" Views"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoSuplier/Vendor">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Vendor"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoMaterial">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Description" String=" Views"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.RemoveDuplicatePoMaterial/Material">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Material"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.SelectionFields">
+                    <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                        <PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">PO</PropertyPath>
+                        <PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">Material</PropertyPath>
+                        <PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">Vendor</PropertyPath>
+                        <PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">Status</PropertyPath>
+                        <PropertyPath xmlns="http://docs.oasis-open.org/odata/ns/edm">Created_On</PropertyPath>
+                    </Collection>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.LineItem">
+                    <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="PO"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Company_Code"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Created_On"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Created_By"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Vendor"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Doc_Date"></PropertyValue>
+                        </Record>
+                        <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="UI.DataField">
+                            <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Value" Path="Status"></PropertyValue>
+                        </Record>
+                    </Collection>
+                    <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="UI.TextArrangement" EnumMember="UI.TextArrangementType/TextOnly"></Annotation>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Description" String=" Annotations"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/PO">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.ValueList">
+                    <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListType">
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="CollectionPath" String="RemoveDuplicatePurchaseOrder"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Label" String="PO"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Parameters">
+                            <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                                <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListParameterOut">
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="LocalDataProperty" PropertyPath="PO"></PropertyValue>
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="ValueListProperty" String="PO"></PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="PO#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Company_Code">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Company Code"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Created_On">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Created On"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Created_By">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Created By"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Vendor">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.ValueList">
+                    <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListType">
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="CollectionPath" String="RemoveDuplicatePoSuplier"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Label" String="Vendor"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Parameters">
+                            <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                                <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListParameterOut">
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="LocalDataProperty" PropertyPath="Vendor"></PropertyValue>
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="ValueListProperty" String="Vendor"></PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Vendor"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Doc_Date">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Doc Date"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Status">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.ValueListWithFixedValues" Bool="true"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.ValueList">
+                    <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListType">
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="CollectionPath" String="RemoveDuplicatePoStatus"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Label" String="Status"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Parameters">
+                            <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                                <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListParameterOut">
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="LocalDataProperty" PropertyPath="Status"></PropertyValue>
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="ValueListProperty" String="Status"></PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Status"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Purchase_Organization">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Purchase Organization"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Document_Type">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Doc Type"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Plant">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Plant"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POHeaders/Material">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.FieldControl" EnumMember="Common.FieldControlType/Mandatory"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.ValueList">
+                    <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListType">
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="CollectionPath" String="RemoveDuplicatePoMaterial"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Label" String="Material"></PropertyValue>
+                        <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="Parameters">
+                            <Collection xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                                <Record xmlns="http://docs.oasis-open.org/odata/ns/edm" Type="Common.ValueListParameterOut">
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="LocalDataProperty" PropertyPath="Material"></PropertyValue>
+                                    <PropertyValue xmlns="http://docs.oasis-open.org/odata/ns/edm" Property="ValueListProperty" String="Material"></PropertyValue>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Material"></Annotation>
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Core.Computed" Bool="true"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/PO">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="PO#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Line">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Line#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Material">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Material"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Plant">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Plant"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Storage_Location">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Storage Location"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Material_Group">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Material Group"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Order_Quantity">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Order Quantity"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Order_Unit">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Order Unit"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Stock_Type">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Stock Type"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Item_Text">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Item Text"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Open_Quantity">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Open Quantity"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Quantity_Delivered">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Quantity Delivered"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Status">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Status"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.POItems/Vendor">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Vendor"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/PO">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="PO#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/Line">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Line#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/ScheduleLine">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="ScheduleLine#"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/Order_date">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Order Date"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/Quantity">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Quantity"></Annotation>
+            </Annotations>
+            <Annotations xmlns="http://docs.oasis-open.org/odata/ns/edm" Target="API.ScheduleLine/Delivery_Date">
+                <Annotation xmlns="http://docs.oasis-open.org/odata/ns/edm" Term="Common.Label" String="Delivery Date"></Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
